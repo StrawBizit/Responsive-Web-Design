@@ -1,0 +1,161 @@
+body {
+  background :linear-gradient(140deg,#81242c,#261c24 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family : 'Poppins', sans-serif;
+  font-size : 1.2em;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #261c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.flex {
+  width:60%;
+  display: flex;
+  border-radius: 25px;
+  overflow:auto;
+  margin:auto;
+}
+
+img {
+ width:100%;
+ height:100%;
+ display:flex;
+ object-fit: cover;
+ content:url("left-img freecodecamp survey form redim.jpg");
+}
+
+#col2 {
+  background: white;
+  padding:50px;
+  display:flex;
+}
+
+#submit {
+  font-size:1.2em;
+  padding:10px 60px;
+  border-radius:50px;
+  background :linear-gradient(140deg,#81242c,#261c24 70%);
+  color:white;
+  margin:50px auto 0 auto;
+}
+
+textarea{
+  width:100%;
+  height:130px;
+  background-color:#e3e3e3;
+  border-radius:10px;
+  border:none;
+  resize:none;
+  font-size:1.2em;
+}
+
+input, select {
+  background-color:#e3e3e3;
+  border-radius:50px;
+  border:none;
+  position: relative;
+  padding:10px 10px;
+  accent-color:#c92a89;
+}
+
+#email {
+  width : 60%;
+}
+
+#dropdown {
+  width : 40%
+}
+
+label, p {
+  font-size:1.1em;
+}
+
+input, select {
+  font-size:0.9em;
+}
+
+input:focus::placeholder, textarea:focus::placeholder, select:focus::placeholder {
+  color:#6a6c6e;
+}
+
+textarea {
+  padding : 10 15;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline:none;
+  background-color:#ededee;
+}
+
+.divider {
+  border-top: 8px solid #c92a89;
+  border-radius: 5px;
+  width:15%;
+  justify-content:lfeft !important;
+}
+
+#title {
+  margin-bottom:-20px;
+}
+
+h1{
+  color:#c92a89;
+}
+
+.flex .col {
+	display: flex;
+	flex-direction: column;
+	flex: 2 1 auto;
+}
+
+.spacing {
+  margin-top:20px;
+}
+
+label {
+  font-weight:600;
+  line-height:2;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  -ms-transform: scale(1.85); /* IE9 */
+  -webkit-transform: scale(1.85); /* Chrome, Safari, Opera */
+  transform: scale(1.85); /* Tous les autres browsers */
+}
+
+.column {
+  float: left;
+}
+
+.column1{
+  margin-right:30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#description {
+margin-bottom :0px;
+}
+
+@media (max-width: 900px) {
+	.flex {
+		flex-wrap: wrap;
+    max-height:300%;
+    width:80%;
+    margin-top:50px;
+    margin-bottom:50px;
+	}
+
+  img {
+    content:url("left-img freecodecamp survey form MOBILE 2.jpg");
+  }
+}

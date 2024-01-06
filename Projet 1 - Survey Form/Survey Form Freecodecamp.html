@@ -1,0 +1,72 @@
+<html>
+  <link rel="stylesheet" href="Survey Form Freecodecamp.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins">
+
+  <body>
+
+    <div class="flex">
+      
+      <div class="col">
+        <img>
+      </div>
+
+      <div class="col" id="col2">
+
+        <h1 id="title">Quel gamer es-tu ?</h1>
+        <p class="divider"></p> 
+        <p id="description">Tes réponses à ce formulaire nous aideront à améliorer nos services.</p>
+
+        <form id="survey-form">
+          <div class="row spacing">
+            <div class="column column1">
+              <label for="name" id="name-label">Pseudo</label><br>
+              <input type="text" placeholder="Ex : Roxxordu74" id="name" required />
+            </div>
+            <div class="column">
+              <label for="age" id="number-label">Age</label><br>
+              <input type="number" id="number" min="13" max="100" placeholder="Age" />
+            </div>
+          </div>
+          <div class="spacing">
+            <label for="email" id="email-label">Adresse email</label><br>
+            <input type="email" placeholder="Ex : Roxxor@test.com" id="email" required />
+          </div>
+          <p class="divider"></p>
+          <div class="spacing">
+            <label for="dropdown" >Combien de temps par semaine joues-tu à un jeu vidéo ?</label><br>
+            <select id="dropdown">
+            <option value=""></option>
+            <option value="veryfew">Moins de 2h</option>
+            <option value="few">Entre 2h et 6h</option>
+            <option value="some">Entre 6h et 10h</option>
+            <option value="alot">Plus de 10h</option>
+            </select>
+          </div>
+          <div class="spacing">
+            <label for="radio">Quel aspect t'est le plus important dans un jeu vidéo ?</label><br>
+            <input value="gameplay" name="aspect" type="radio" class="radio" /> Gameplay innovant<br>
+            <input value="histoire" name="aspect" type="radio" class="radio" /> Bonne narration / Histoire prenante<br>
+            <input value="graphismes" name="aspect" type="radio" class="radio"/> Graphismes exceptionnels<br>
+          </div>
+          <div class="spacing">
+            <label for="checkbox">Sur quel(s) appareil(s) joues-tu au moins 1 fois par semaine ?</label><br>
+            <input type="checkbox" class="checkbox" value="PC"/> Ordinateur de bureau<br>
+            <input type="checkbox" class="checkbox" value="laptop"/> Ordinateur portable<br>
+            <input type="checkbox" class="checkbox" value="console"/> Console de salon<br>
+            <input type="checkbox" class="checkbox" value="portable"/> Console portable<br>
+            <input type="checkbox" class="checkbox" value="smartphone"/> Smartphone<br>
+          </div>
+          <div class="spacing">
+            <label for="commentaire">Raconte l'expérience gaming qui t'a le plus marqué :</label>
+            <textarea id="commentaire" name="comment" placeholder="N'hésite pas à détailler, on adore ça !"></textarea>
+          </div>
+          <div>
+            <input type="submit" id="submit"/>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
